@@ -1,0 +1,48 @@
+---
+title: "Quiz 2: Method of Moments and Bayesian Parameter Estimation (OPTIONAL)"
+subtitle: "STAT 343: Mathematical Statistics"
+output:
+  pdf_document:
+    keep_tex: true
+header-includes:
+   - \usepackage{booktabs}
+geometry: margin=1.5cm
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+\def\simiid{\stackrel{{\mbox{\text{\tiny i.i.d.}}}}{\sim}}
+
+## Instructions
+
+- Your quiz answers can be either typeset using latex or hand written. If you choose to write your answers by hand, make sure your work is legible and organized.
+- This is a closed book, closed notes, closed Moodle quiz. You are only permitted to use the Common Probability Distributions PDF, which is included in the files that you pulled from Github for this quiz.
+- This OPTIONAL quiz is due Tuesday, 4/6 by 5 PM ET to Gradescope. Please submit it under the `Quiz 2 - Redo` Assignment. **There are 2 questions on this quiz, which are on different pages for your convenience. Please complete both problems.**
+
+\newpage
+
+## Problem 1
+
+Suppose $X_1,...,X_n \overset{iid}{\sim} t_\nu$, where $\nu$ is the degrees of freedom.
+
+### (a) Find the method of moments estimator for $\nu$.
+
+\vspace{3cm}
+
+### (b) Is the estimator you found in (a) biased? Show all your work.
+
+\vspace{3cm}
+
+\newpage
+
+## Problem 2
+
+Suppose we have the following hierarchical model setup:
+
+- Data model: $X|\Theta=\theta \sim Geometric(\theta)$
+- Prior model: $\Theta \sim Beta(\alpha, \beta)$
+
+### Find the posterior distribution $f_{\Theta|X}(\theta|x)$. Be sure to state the parameters for the posterior distribution and note the parametric family to which is belongs.
